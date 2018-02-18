@@ -48,3 +48,11 @@ the fan speeds (if it's working, of course) and exit
 `.\fanspeed.ps1`
 
 Run this to just set fanspeeds and exit
+
+# Big Thanks
+I couldn't have done this without r/homelab: https://www.reddit.com/r/homelab
+
+Specifically, u/tatmde and u/Maxamus456 - and all the folks who contrib'd
+
+https://www.reddit.com/r/homelab/comments/7xqb11/dell_fan_noise_control_silence_your_poweredge/
+https://www.reddit.com/r/homelab/comments/70quk0/some_stuff_i_found_to_lower_the_fan_speeds_of_my/
