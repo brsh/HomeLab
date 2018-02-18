@@ -27,7 +27,7 @@ Important variables:
 			3. Fail
 	* $IDRACIP: the ip of the iDrac (IPMI over LAN must be enabled)
 	* $PathToIPMITool: the path to the directory where ipmitool.exe is located
-	* LogFile: the path to a text file for logging
+	* $LogFile: the path to a text file for logging
 		Notes: If empty, no log will be kept.
 
 Scheduled Task:
