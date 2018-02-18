@@ -18,6 +18,17 @@ service account, make sure to log in as the service account to save the tokens.
 
 This script can run from anywhere with network access to the iDrac.
 
+### Problems
+Things I've discovered with my r810:
+* From power off, IPMI over LAN reverts to disabled. Means fans go full speed until I re-enable.
+  * This is def a bios problem; and I doubt I'll ever see a fix
+* From reboot, ipmitool can't pull any information... until I run it manually. Weird. Means
+fans run at my script's default speed, and the log lists 0 fans and 0 ambient temp (I hard set 
+a default temp for planar - just in case).
+  * This could be my script's fault... although I'm not sure how: why make me run it manually to
+  work? I'm working on adjusting the event log code to include the write-verbose text to see
+  where the problem lies. I plan to also capture ipmitool's error output so I can write that too.
+
 ### Important variables:
 * `$IDRACUSer`: the username to use to access the iDrac
   * Notes: if you leave the variables blank, the script will:
