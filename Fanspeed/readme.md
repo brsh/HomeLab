@@ -29,6 +29,9 @@ a default temp for planar - just in case).
   work? I'm working on adjusting the event log code to include the write-verbose text to see
   where the problem lies. I plan to also capture ipmitool's error output so I can write that too.
 
+Note: Neither of these happens everytime. As it is, both have only happened once in unrelated
+reboots/shutdowns.
+
 ### Important variables:
 * `$IDRACUSer`: the username to use to access the iDrac
   * Notes: if you leave the variables blank, the script will:
